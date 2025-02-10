@@ -1,0 +1,146 @@
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: aqua;
+}
+body,
+div#root,
+.App {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: block;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+}
+div {
+  --header-footer-background: #122b5a;
+  --header-footer-height: 6%;
+  --max-header-footer-height: 10%;
+  --min-header-footer-height: 5%;
+  --main-content-height: 88%;
+  --max-main-content-height: 80%;
+  --min-main-content-height: 90%;
+}
+div#header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: var(--header-footer-height);
+  max-height: var(--max-header-footer-height);
+  min-height: var(--min-header-footer-height);
+  background-color: var(--header-footer-background);
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+div#footer {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: var(--header-footer-height);
+  max-height: var(--max-header-footer-height);
+  min-height: var(--min-header-footer-height);
+  background-color: var(--header-footer-background);
+  margin: 0;
+  color: white;
+}
+div#footer > div#footerTitle {
+  display: flex;
+  flex: 0.1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+div#footer > div#links {
+  display: flex;
+  flex: 0.9;
+  background-color: #9613a1;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+div#footer > div#links > a {
+  display: inline;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+}
+div#mainContent {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: var(--main-content-height);
+  max-height: var(--max-main-content-height);
+  min-height: var(--min-main-content-height);
+  padding: 10px;
+  color: black;
+}
+span.separator {
+  width: 100%;
+  height: 10px;
+  display: block;
+  border-top-width: 1px;
+  border-top-style: dashed;
+}
+div.course {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+div.course:nth-child(odd) {
+  background-color: #b3cbeb;
+}
+div.course:nth-child(even) {
+  background-color: #1078ff;
+}
+div.leadingColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+#mainContent > :not(div.leadingColumn) {
+  border-left: 2px solid black;
+}
+#mainContent > ul {
+  box-sizing: border-box;
+}
+#mainContent > ul > li {
+  list-style-type: decimal;
+  box-sizing: border-box;
+  border-left: 1px dashed gray;
+  padding-left: 10px;
+}
+input[type="button"]:disabled {
+  box-shadow: inset 0px 0px 1px gray;
+}
+
+div.ticketDetail {
+  background-color: #1078ff;
+  color: white;
+  min-width: "100px";
+  border: 1px solid black;
+  border-radius: "2px";
+}
