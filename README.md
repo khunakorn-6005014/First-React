@@ -55,9 +55,6 @@ This project includes the following components:
 
 	• Login: Login page component.
 
-About: About page component.![image](https://github.com/user-attachments/assets/a9257468-7078-4a2d-8efa-733bd375a3ae)
-
-
 ### Contributing
 Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
 
